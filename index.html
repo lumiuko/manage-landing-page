@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Manage landing page</title>
+    <script src="https://kit.fontawesome.com/56471ca088.js" crossorigin="anonymous" defer></script>
+  </head>
+  <body class="text-lg leading-lg bg-pattern-body-mobile bg-no-repeat bg-right-top text-dark-gray xl:leading-[1.625rem] xl:bg-pattern-body-desktop xl:bg-right-top">
+    <nav class="px-6 pt-10 xl:px-10 xl:pt-14">
+      <div class="max-w-container mx-auto flex items-center relative z-10 text-dark-blue min-h-[24px]">
+        <img src="/logo.svg" class="w-[110px] xl:w-[147px]" alt="Logo" />
+        <button class="ml-auto xl:hidden" aria-label="Toggle menu" aria-expanded="false" id="menu-btn">
+          <img src="/icon-hamburger.svg" id="icon-hamburger" alt="Hamburger" aria-hidden="true" />
+          <img src="/icon-close.svg" id="icon-close" class="hidden" alt="Hamburger" aria-hidden="true" />
+        </button>
+        <!-- Mobile Nav -->
+        <ul class="absolute top-0 left-0 w-full bg-white shadow-menu rounded-sm p-10 mt-14 text-center text-lg leading-[1.4375rem] font-bold flex flex-col gap-6 transition-all xl:hidden menu-hidden" id="mobile-menu">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+        <!-- Desktop Nav -->
+        <ul class="hidden xl:flex flex-1 justify-center text-sm leading-[1.1875rem] gap-8 font-medium">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+        <a href="#" class="hidden xl:inline-block ml-auto px-8 py-3 bg-orange text-white font-bold text-sm leading-sm rounded-lg shadow-btn hover:bg-orange-hover hover:text-gray-hover transition-colors">Get Started</a>
+      </div>
+      <div class="fixed top-0 left-0 w-full h-screen bg-overlay transition-all overlay-hidden xl:hidden" id="overlay"></div>
+    </nav>
+    <main class="mt-12 bg-pattern-main-mobile bg-no-repeat bg-[right_top_400px] xl:mt-[7.5rem] xl:bg-pattern-main-desktop xl:bg-[left_top_900px]">
+      <section class="px-6 xl:px-10">
+        <div class="max-w-container mx-auto flex flex-col gap-5 xl:flex-row xl:justify-between xl:items-center">
+          <img src="/illustration-intro.svg" class="px-1 mx-auto w-full max-w-[326px] xl:order-1 xl:px-0 xl:max-w-[540px] xl:mx-0" alt="Intro illustration" />
+          <div class="text-center xl:text-left xl:max-w-[470px]">
+            <h1 class="font-bold text-h2 leading-h2 text-dark-blue tracking-[-1px] xl:text-h1 xl:leading-h1">Bring everyone together to build better products.</h1>
+            <p class="mt-2 xl:mt-[2.125rem] xl:max-w-[350px]">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+            <a href="#" class="inline-block mt-7 px-8 py-3 bg-orange text-white font-bold text-sm leading-sm rounded-lg shadow-btn xl:mt-10 hover:bg-orange-hover hover:text-gray-hover transition-colors">Get Started</a>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[5.75rem] md:px-10">
+        <div class="max-w-container mx-auto flex flex-col gap-[3.375rem] xl:flex-row xl:gap-0 xl:justify-between">
+          <div class="text-center px-[1.375rem] xl:px-0 xl:text-left xl:max-w-[445px]">
+            <h2 class="text-h4 leading-h4 tracking-[-0.71px] font-bold text-dark-blue xl:text-h2 xl:leading-[3rem]">What’s different about Manage?</h2>
+            <p class="mt-3 text-[0.875rem] xl:mt-6 xl:text-lg xl:max-w-[350px]">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
+          </div>
+          <div class="pl-4 flex flex-col gap-12 xl:pl-0 xl:max-w-[540px] xl:gap-10">
+            <div>
+              <div class="flex items-center bg-cream rounded-l-xl font-bold leading-[1.4375rem] xl:bg-transparent">
+                <div class="px-6 py-2 bg-orange rounded-xl text-white">01</div>
+                <h3 class="text-dark-blue ml-4">Track company-wide progress</h3>
+              </div>
+              <p class="mt-[0.5625rem] text-[0.875rem] xl:pl-[5.25rem] xl:text-lg">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+            </div>
+            <div>
+              <div class="flex items-center bg-cream rounded-l-xl font-bold leading-[1.4375rem] xl:bg-transparent">
+                <div class="px-6 py-2 bg-orange rounded-xl text-white">02</div>
+                <h3 class="text-dark-blue ml-4">Advanced built-in reports</h3>
+              </div>
+              <p class="mt-[0.5625rem] text-[0.875rem] xl:pl-[5.25rem] xl:text-lg">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+            </div>
+            <div>
+              <div class="flex items-center bg-cream rounded-l-xl font-bold leading-[1.4375rem] xl:bg-transparent">
+                <div class="px-6 py-2 bg-orange rounded-xl text-white">03</div>
+                <h3 class="text-dark-blue ml-4">Everything you need in one place</h3>
+              </div>
+              <p class="mt-[0.5625rem] text-[0.875rem] xl:pl-[5.25rem] xl:text-lg">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[3.875rem] px-[1.125rem] xl:mt-[9.125rem] xl:px-0">
+        <h2 class="text-h3 leading-h3 font-bold text-dark-blue text-center xl:text-h2 xl:leading-[3.625rem]">What they’ve said</h2>
+        <div class="swiper carousel text-[0.875rem] leading-[1.625rem] xl:text-lg">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="w-full h-full flex flex-col items-center bg-gray text-center px-[1.375rem] pb-[2.625rem] xl:px-10">
+                <img src="/avatar-anisha.png" class="w-[72px] -mt-9" alt="Anisha Li avatar" />
+                <h3 class="mt-6 font-bold text-dark-blue leading-[1.4375rem]">Anisha Li</h3>
+                <p class="mt-5">“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-full h-full flex flex-col items-center bg-gray text-center px-[1.375rem] pb-[2.625rem] xl:px-10">
+                <img src="/avatar-ali.png" class="w-[72px] -mt-9" alt="Ali Bravo avatar" />
+                <h3 class="mt-6 font-bold text-dark-blue leading-[1.4375rem]">Ali Bravo</h3>
+                <p class="mt-5">“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-full h-full flex flex-col items-center bg-gray text-center px-[1.375rem] pb-[2.625rem] xl:px-10">
+                <img src="/avatar-richard.png" class="w-[72px] -mt-9" alt="Richard Watts avatar" />
+                <h3 class="mt-6 font-bold text-dark-blue leading-[1.4375rem]">Richard Watts</h3>
+                <p class="mt-5">“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-full h-full flex flex-col items-center bg-gray text-center px-[1.375rem] pb-[2.625rem] xl:px-10">
+                <img src="/avatar-shanai.png" class="w-[72px] -mt-9" alt="Shanai Gough avatar" />
+                <h3 class="mt-6 font-bold text-dark-blue leading-[1.4375rem]">Shanai Gough</h3>
+                <p class="mt-5">“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="flex justify-center mt-12">
+          <a href="#" class="inline-block px-8 py-3 bg-orange text-white font-bold text-sm leading-sm rounded-lg shadow-btn hover:bg-orange-hover hover:text-gray-hover transition-colors">Get Started</a>
+        </div>
+      </section>
+      <section class="mt-[2.625rem] bg-orange px-8 py-[5.625rem] bg-simplify-section-mobile bg-no-repeat bg-[center_left] xl:mt-[11.25rem] xl:py-[3.875rem] xl:bg-simplify-section-desktop xl:bg-[bottom_left_250px]">
+        <div class="max-w-container mx-auto flex flex-col items-center gap-7 xl:flex-row">
+          <h2 class="text-h2 leading-h2 tracking-[-1px] text-white font-bold text-center xl:leading-[3rem] xl:max-w-[470px] xl:text-left xl:tracking-[-0.71px]">Simplify how your team works today.</h2>
+          <a href="#" class="inline-block px-8 py-3 bg-white text-orange font-bold text-sm leading-sm rounded-lg shadow-btn-white xl:ml-auto hover:text-orange-hover transition-colors">Get Started</a>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark px-6 pt-[3.125rem] pb-[1.875rem] xl:px-10">
+      <div class="max-w-container mx-auto flex flex-col items-center xl:flex-row">
+        <div class="self-stretch flex flex-col justify-between text-sm leading-sm xl:order-3 xl:ml-auto">
+          <form id="form">
+            <div class="flex gap-2">
+              <input type="text" id="email-input" placeholder="Updates in your inbox…" class="bg-white px-6 py-3 rounded-lg flex-1 text-dark placeholder:text-placeholer" />
+              <button class="bg-orange font-bold px-6 py-3 text-white rounded-lg hover:bg-orange-hover hover:text-gray-hover transition-colors">Go</button>
+            </div>
+            <p class="hidden text-red mt-1 ml-4">Please insert a valid email</p>
+          </form>
+          <p class="hidden text-right xl:block">Copyright 2020. All Rights Reserved</p>
+        </div>
+        <div class="mt-[3.375rem] flex gap-[6.625rem] text-md leading-md text-white xl:mt-0 xl:order-2 xl:ml-[7.75rem] xl:gap-[13.625rem]">
+          <ul class="flex flex-col gap-[0.8125rem] xl:max-w-[255px]">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+          <ul class="flex flex-col gap-[0.8125rem] xl:max-w-[255px]">
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="mt-[3.125rem] flex flex-col items-center gap-[3.375rem] xl:mt-0 xl:order-1 xl:self-stretch xl:justify-between xl:gap-0">
+          <div class="flex gap-[2.125rem] text-h3 text-white xl:text-[1.25rem] xl:leading-[1.25rem] xl:gap-3 xl:order-1">
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="Pinterest">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <img src="/logo-white.svg" alt="Logo" />
+        </div>
+        <p class="mt-[3.125rem] text-sm leading-[1.1875rem] xl:hidden">Copyright 2020. All Rights Reserved</p>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

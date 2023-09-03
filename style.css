@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  background-color: #f3603c;
+}
+
+.menu-hidden,
+.overlay-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu-hidden {
+  transform: translateY(10px);
+}
+
+nav li a,
+footer a {
+  transition: color 0.2s;
+}
+
+nav li a:hover {
+  color: #9297a9;
+}
+
+footer a:hover {
+  color: #f3603c;
+}
+
+.form-error input {
+  outline: 1px solid #f33c3c;
+  color: #f33c3c;
+}
+
+.form-error > p {
+  display: block;
+}
+
+.carousel {
+  padding-top: 6.125rem !important;
+}
+
+.swiper-pagination {
+  margin-top: 1.625rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.3125rem;
+  box-sizing: content-box;
+}
+
+.swiper-pagination-bullet {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #f3603c;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f3603c;
+}
+
+.swiper {
+  height: 100%;
+}
+
+.swiper-slide {
+  height: auto !important;
+}
+
+@media (min-width: 1110px) {
+  .carousel {
+    padding-top: 6.25rem !important;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .swiper-slide {
+    width: 540px !important;
+  }
+}
